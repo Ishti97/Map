@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* add this to ensure the sidebar is on top of the map */
+  }
+  
+  #map {
+    margin-left: 300px; /* add this to make room for the sidebar */
+    width: calc(100% - 300px); /* adjust the map width to fit the remaining space */
+    height: 100vh;
+    background-color: lightgray;
+    border: 1px solid red;
+  }
+  
+  #selected-area {
+    font-size: 18px;
+    font-weight: bold;
+  }
